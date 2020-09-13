@@ -33,7 +33,7 @@ export default function MediaCard(props) {
             _{props.title}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            Show your friends that you are {props.title} with our ... 
+            Show your friends that you are {props.title} ... 
           </Typography>
         </CardContent>
       </CardActionArea>

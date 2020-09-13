@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // react components for routing our app without refresh
@@ -34,6 +34,40 @@ const useStyles = makeStyles(styles);
 
 export default function Components(props) {
   const classes = useStyles();
+  const [desc, setDesc] = useState("");
+  const [orientation, setOrientation] = useState(1);
+  const [wordIndex, setWordIndex] = useState(0);
+  const [charIndex, setCharIndex] = useState(0);
+  const words = ["unisex", "sustainable", "your choice"];
+
+  useEffect(() => {
+    const func = setTimeout(() => {
+      if (orientation === 1) {
+        if (words[wordIndex].length >= charIndex + 1) {
+          setCharIndex(charIndex => charIndex + 1);
+          setDesc(words[wordIndex].substring(0, charIndex + 1));
+        }
+        else {
+          if (wordIndex !== words.length - 1) {
+            setOrientation(-1);
+          }
+        }
+      }
+      else if (orientation === -1) {
+        if (charIndex > 0) {
+          setCharIndex(charIndex => charIndex - 1);
+          setDesc(words[wordIndex].substring(0, charIndex));
+        }
+        else {
+          setWordIndex(wordIndex => (wordIndex + 1));
+          setCharIndex(0);
+          setOrientation(1);
+        }
+      }
+    }, (wordIndex === 0 && charIndex === 0) || words[wordIndex].length < charIndex + 1 ? 1000 : Math.floor(Math.random() * 40) + 80  );
+    return () => clearTimeout(func);
+  }, [charIndex, orientation]);
+
   const { ...rest } = props;
   return (
     <div>
@@ -53,9 +87,9 @@ export default function Components(props) {
           <GridContainer>
             <GridItem>
               <div className={classes.brand}>
-                <h1 className={classes.title}>Moods</h1>
+                <h1 className={classes.title}>py:ua</h1>
                 <h3 className={classes.subtitle}>
-                  _your mood _your skin
+                  py:ua is <b>{desc}</b>
                 </h3>
               </div>
             </GridItem>

@@ -75,24 +75,28 @@ export default function SectionBasics() {
     <div className={classes.sections}>
       <div className={classes.container}>
         <div className={classes.title}>
-          <h2>Moods</h2>
+          <h2>_your mood</h2>
         </div>
         <Grid container className={classes.root} spacing={2}>
           <Grid item lg={4} xs={12}>
-            <MediaCard img={"https://www.thehappymovie.com/wp-content/media/2020/08/happy.jpg"} title={"happy"}/>
+            <MediaCard img={"https://www.visittranas.com/wp-content/uploads/2018/03/placeholder.jpg"} title={"happy"}/>
           </Grid> <Grid item lg={4} xs={12}>
-            <MediaCard img={"https://www.thehappymovie.com/wp-content/media/2020/08/happy.jpg"} title={"happy"}/>
+            <MediaCard img={"https://www.visittranas.com/wp-content/uploads/2018/03/placeholder.jpg"} title={"energetic"}/>
           </Grid> <Grid item lg={4} xs={12}>
-            <MediaCard img={"https://www.thehappymovie.com/wp-content/media/2020/08/happy.jpg"} title={"happy"}/>
+            <MediaCard img={"https://www.visittranas.com/wp-content/uploads/2018/03/placeholder.jpg"} title={"optimistic"}/>
           </Grid> <Grid item lg={4} xs={12}>
-            <MediaCard img={"https://m.media-amazon.com/images/I/61G+sXwUoqL._SS500_.jpg"} title={"sad"}/>
+            <MediaCard img={"https://www.visittranas.com/wp-content/uploads/2018/03/placeholder.jpg"} title={"sad"}/>
           </Grid> <Grid item lg={4} xs={12}>
-            <MediaCard img={"https://m.media-amazon.com/images/I/61G+sXwUoqL._SS500_.jpg"} title={"sad"}/>
+            <MediaCard img={"https://www.visittranas.com/wp-content/uploads/2018/03/placeholder.jpg"} title={"cranky"}/>
           </Grid> <Grid item lg={4} xs={12}>
-            <MediaCard img={"https://m.media-amazon.com/images/I/61G+sXwUoqL._SS500_.jpg"} title={"sad"}/>
+            <MediaCard img={"https://www.visittranas.com/wp-content/uploads/2018/03/placeholder.jpg"} title={"irritated"}/>
           </Grid>
         </Grid>
+        <div className={classes.title}>
+          <h2>_your taste</h2>
+        </div>
       </div>
+      
     </div>
   );
 }
