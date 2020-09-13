@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/vieco/static/css/main.c5a3ee5c.chunk.css",
-    "main.js": "/vieco/static/js/main.9bed08e6.chunk.js",
-    "main.js.map": "/vieco/static/js/main.9bed08e6.chunk.js.map",
+    "main.js": "/vieco/static/js/main.496b5db5.chunk.js",
+    "main.js.map": "/vieco/static/js/main.496b5db5.chunk.js.map",
     "runtime-main.js": "/vieco/static/js/runtime-main.e5d94231.js",
     "runtime-main.js.map": "/vieco/static/js/runtime-main.e5d94231.js.map",
     "static/js/2.b6614f8f.chunk.js": "/vieco/static/js/2.b6614f8f.chunk.js",
     "static/js/2.b6614f8f.chunk.js.map": "/vieco/static/js/2.b6614f8f.chunk.js.map",
     "index.html": "/vieco/index.html",
-    "precache-manifest.46efeca0989f36f1a0e50e4b2cd3211e.js": "/vieco/precache-manifest.46efeca0989f36f1a0e50e4b2cd3211e.js",
+    "precache-manifest.f56823479de8af4a722146dec70b4167.js": "/vieco/precache-manifest.f56823479de8af4a722146dec70b4167.js",
     "service-worker.js": "/vieco/service-worker.js",
     "static/css/main.c5a3ee5c.chunk.css.map": "/vieco/static/css/main.c5a3ee5c.chunk.css.map",
     "static/js/2.b6614f8f.chunk.js.LICENSE.txt": "/vieco/static/js/2.b6614f8f.chunk.js.LICENSE.txt",
@@ -40,6 +40,6 @@
     "static/js/runtime-main.e5d94231.js",
     "static/js/2.b6614f8f.chunk.js",
     "static/css/main.c5a3ee5c.chunk.css",
-    "static/js/main.9bed08e6.chunk.js"
+    "static/js/main.496b5db5.chunk.js"
   ]
 }
