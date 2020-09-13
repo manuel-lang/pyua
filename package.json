@@ -1,8 +1,8 @@
 {
-  "name": "material-kit-react",
-  "version": "1.9.0",
+  "name": "vieco",
+  "version": "1.0.0",
   "description": "Material Kit React. Coded by Creative Tim",
-  "private": true,
+  "private": false,
   "homepage": "https://manuel-lang.github.io/vieco",
   "main": "src/index.js",
   "dependencies": {
