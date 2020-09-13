@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4a9f0e4545f9a656e03ff2d94260eed4",
+    "revision": "100c71057567da5b2d5f83225c74aaec",
     "url": "/vieco/index.html"
   },
   {
-    "revision": "a8c40333b81d7e27ee2a",
+    "revision": "1bd95d087a74a0ade568",
     "url": "/vieco/static/css/main.c5a3ee5c.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/vieco/static/js/2.b6614f8f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a8c40333b81d7e27ee2a",
-    "url": "/vieco/static/js/main.e23e4efa.chunk.js"
+    "revision": "1bd95d087a74a0ade568",
+    "url": "/vieco/static/js/main.3230667a.chunk.js"
   },
   {
     "revision": "16586f17c289534882f0",
