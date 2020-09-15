@@ -23,9 +23,15 @@ import Paginations from "components/Pagination/Pagination.js";
 import Badge from "components/Badge/Badge.js";
 import Grid from '@material-ui/core/Grid';
 
+import sleep from "assets/img/2020_PYUA_SLEEP.jpg";
+import rock from "assets/img/Pyua - Rock.jpg";
+import breathe from "assets/img/Pyua_Breathe.jpg";
+import dance from "assets/img/PYUA-DANCE.jpg"
+
 
 import styles from "assets/jss/material-kit-react/views/componentsSections/basicsStyle.js";
 import MediaCard from "../MediaCard";
+import { AirlineSeatFlatRounded } from "@material-ui/icons";
 
 const useStyles = makeStyles(styles);
 
@@ -35,6 +41,8 @@ export default function SectionBasics() {
   const [selectedEnabled, setSelectedEnabled] = React.useState("b");
   const [checkedA, setCheckedA] = React.useState(true);
   const [checkedB, setCheckedB] = React.useState(false);
+  const [flavors, setFlavors] = React.useState([]);
+  const [dialogStep, setDialogStep] = React.useState(0);
   React.useEffect(() => {
     // if (
     //   // !document
@@ -71,6 +79,12 @@ export default function SectionBasics() {
     }
     setChecked(newChecked);
   };
+
+  const addFlavor = (flavor) => {
+    let tempFlavors = [...flavors];
+    tempFlavors.push(flavor);
+    setFlavors(tempFlavors);
+  }
   return (
     <div className={classes.sections}>
       <div className={classes.container}>
@@ -78,25 +92,280 @@ export default function SectionBasics() {
           <h2>_your mood</h2>
         </div>
         <Grid container className={classes.root} spacing={2}>
-          <Grid item lg={4} xs={12}>
-            <MediaCard img={"https://www.visittranas.com/wp-content/uploads/2018/03/placeholder.jpg"} title={"happy"}/>
-          </Grid> <Grid item lg={4} xs={12}>
-            <MediaCard img={"https://www.visittranas.com/wp-content/uploads/2018/03/placeholder.jpg"} title={"energetic"}/>
-          </Grid> <Grid item lg={4} xs={12}>
-            <MediaCard img={"https://www.visittranas.com/wp-content/uploads/2018/03/placeholder.jpg"} title={"optimistic"}/>
-          </Grid> <Grid item lg={4} xs={12}>
-            <MediaCard img={"https://www.visittranas.com/wp-content/uploads/2018/03/placeholder.jpg"} title={"sad"}/>
-          </Grid> <Grid item lg={4} xs={12}>
-            <MediaCard img={"https://www.visittranas.com/wp-content/uploads/2018/03/placeholder.jpg"} title={"cranky"}/>
-          </Grid> <Grid item lg={4} xs={12}>
-            <MediaCard img={"https://www.visittranas.com/wp-content/uploads/2018/03/placeholder.jpg"} title={"irritated"}/>
+          <Grid item lg={3} xs={12}>
+            <MediaCard img={breathe} title={"breathe"} />
+          </Grid> <Grid item lg={3} xs={12}>
+            <MediaCard img={dance} title={"dance"} />
+          </Grid> <Grid item lg={3} xs={12}>
+            <MediaCard img={rock} title={"rock"} />
+          </Grid> <Grid item lg={3} xs={12}>
+            <MediaCard img={sleep} title={"sleep"} />
           </Grid>
         </Grid>
         <div className={classes.title}>
           <h2>_your taste</h2>
         </div>
+        {dialogStep === 0 && <div>
+          <h4>Select your favorite flavors</h4>
+          <Grid container className={classes.root} spacing={2}>
+            <Grid item lg={2} xs={12}>
+              <FormControlLabel
+                control={
+                  <Checkbox
+                    tabIndex={-1}
+                    onClick={() => addFlavor("Bergamont Orange")}
+                    checkedIcon={<Check className={classes.checkedIcon} />}
+                    icon={<Check className={classes.uncheckedIcon} />}
+                    classes={{
+                      checked: classes.checked,
+                      root: classes.checkRoot
+                    }}
+                  />
+                }
+                classes={{ label: classes.label, root: classes.labelRoot }}
+                label="Bergamot Orange"
+              />
+            </Grid>
+            <Grid item lg={2} xs={12}>
+              <FormControlLabel
+                control={
+                  <Checkbox
+                    tabIndex={-1}
+                    onClick={() => addFlavor("Eucalyptus")}
+                    checkedIcon={<Check className={classes.checkedIcon} />}
+                    icon={<Check className={classes.uncheckedIcon} />}
+                    classes={{
+                      checked: classes.checked,
+                      root: classes.checkRoot
+                    }}
+                  />
+                }
+                classes={{ label: classes.label, root: classes.labelRoot }}
+                label="Eucalyptus"
+              />
+            </Grid>
+            <Grid item lg={2} xs={12}>
+              <FormControlLabel
+                control={
+                  <Checkbox
+                    tabIndex={-1}
+                    onClick={() => addFlavor("Grapefruit")}
+                    checkedIcon={<Check className={classes.checkedIcon} />}
+                    icon={<Check className={classes.uncheckedIcon} />}
+                    classes={{
+                      checked: classes.checked,
+                      root: classes.checkRoot
+                    }}
+                  />
+                }
+                classes={{ label: classes.label, root: classes.labelRoot }}
+                label="Grapefruit"
+              />
+            </Grid>
+          </Grid>
+          <Grid container className={classes.root} spacing={2}>
+            <Grid item lg={2} xs={12}>
+              <FormControlLabel
+                control={
+                  <Checkbox
+                    tabIndex={-1}
+                    onClick={() => addFlavor("Lavender")}
+                    checkedIcon={<Check className={classes.checkedIcon} />}
+                    icon={<Check className={classes.uncheckedIcon} />}
+                    classes={{
+                      checked: classes.checked,
+                      root: classes.checkRoot
+                    }}
+                  />
+                }
+                classes={{ label: classes.label, root: classes.labelRoot }}
+                label="Lavender"
+              />
+            </Grid>
+            <Grid item lg={2} xs={12}>
+              <FormControlLabel
+                control={
+                  <Checkbox
+                    tabIndex={-1}
+                    onClick={() => addFlavor("Lemon")}
+                    checkedIcon={<Check className={classes.checkedIcon} />}
+                    icon={<Check className={classes.uncheckedIcon} />}
+                    classes={{
+                      checked: classes.checked,
+                      root: classes.checkRoot
+                    }}
+                  />
+                }
+                classes={{ label: classes.label, root: classes.labelRoot }}
+                label="Lemon"
+              />
+            </Grid>
+            <Grid item lg={2} xs={12}>
+              <FormControlLabel
+                control={
+                  <Checkbox
+                    tabIndex={-1}
+                    onClick={() => addFlavor("Lime")}
+                    checkedIcon={<Check className={classes.checkedIcon} />}
+                    icon={<Check className={classes.uncheckedIcon} />}
+                    classes={{
+                      checked: classes.checked,
+                      root: classes.checkRoot
+                    }}
+                  />
+                }
+                classes={{ label: classes.label, root: classes.labelRoot }}
+                label="Lime"
+              />
+            </Grid>
+          </Grid>
+          <Grid container className={classes.root} spacing={2}>
+            <Grid item lg={2} xs={12}>
+              <FormControlLabel
+                control={
+                  <Checkbox
+                    tabIndex={-1}
+                    onClick={() => addFlavor("Mint")}
+                    checkedIcon={<Check className={classes.checkedIcon} />}
+                    icon={<Check className={classes.uncheckedIcon} />}
+                    classes={{
+                      checked: classes.checked,
+                      root: classes.checkRoot
+                    }}
+                  />
+                }
+                classes={{ label: classes.label, root: classes.labelRoot }}
+                label="Mint"
+              />
+            </Grid>
+            <Grid item lg={2} xs={12}>
+              <FormControlLabel
+                control={
+                  <Checkbox
+                    tabIndex={-1}
+                    onClick={() => addFlavor("Peppermint")}
+                    checkedIcon={<Check className={classes.checkedIcon} />}
+                    icon={<Check className={classes.uncheckedIcon} />}
+                    classes={{
+                      checked: classes.checked,
+                      root: classes.checkRoot
+                    }}
+                  />
+                }
+                classes={{ label: classes.label, root: classes.labelRoot }}
+                label="Peppermint"
+              />
+            </Grid>
+            <Grid item lg={2} xs={12}>
+              <FormControlLabel
+                control={
+                  <Checkbox
+                    tabIndex={-1}
+                    onClick={() => addFlavor("Rosemary")}
+                    checkedIcon={<Check className={classes.checkedIcon} />}
+                    icon={<Check className={classes.uncheckedIcon} />}
+                    classes={{
+                      checked: classes.checked,
+                      root: classes.checkRoot
+                    }}
+                  />
+                }
+                classes={{ label: classes.label, root: classes.labelRoot }}
+                label="Rosemary"
+              />
+            </Grid>
+            <Grid item lg={2} xs={12}>
+              {flavors.length > 0 && <Button onClick={() => setDialogStep(1)}>Continue</Button>}
+            </Grid>
+          </Grid>
+        </div>}
+        {dialogStep === 1 && <div>
+          <h4>Select your current feeling</h4>
+          <FormControlLabel
+            control={
+              <Radio
+                checked={selectedEnabled === "motivated"}
+                onChange={() => setSelectedEnabled("motivated")}
+                value="motivated"
+                name="radio button enabled"
+                aria-label="motivated"
+                icon={
+                  <FiberManualRecord className={classes.radioUnchecked} />
+                }
+                checkedIcon={
+                  <FiberManualRecord className={classes.radioChecked} />
+                }
+                classes={{
+                  checked: classes.radio,
+                  root: classes.radioRoot
+                }}
+              />
+            }
+            classes={{
+              label: classes.label,
+              root: classes.labelRoot
+            }}
+            label="motivated"
+          />
+          <FormControlLabel
+            control={
+              <Radio
+                checked={selectedEnabled === "calm"}
+                onChange={() => setSelectedEnabled("calm")}
+                value="calm"
+                name="radio button enabled"
+                aria-label="calm"
+                icon={
+                  <FiberManualRecord className={classes.radioUnchecked} />
+                }
+                checkedIcon={
+                  <FiberManualRecord className={classes.radioChecked} />
+                }
+                classes={{
+                  checked: classes.radio,
+                  root: classes.radioRoot
+                }}
+              />
+            }
+            classes={{
+              label: classes.label,
+              root: classes.labelRoot
+            }}
+            label="calm"
+          />
+          <FormControlLabel
+            control={
+              <Radio
+                checked={selectedEnabled === "exhausted"}
+                onChange={() => setSelectedEnabled("exhausted")}
+                value="exhausted"
+                name="radio button enabled"
+                aria-label="exhausted"
+                icon={
+                  <FiberManualRecord className={classes.radioUnchecked} />
+                }
+                checkedIcon={
+                  <FiberManualRecord className={classes.radioChecked} />
+                }
+                classes={{
+                  checked: classes.radio,
+                  root: classes.radioRoot
+                }}
+              />
+            }
+            classes={{
+              label: classes.label,
+              root: classes.labelRoot
+            }}
+            label="exhausted"
+          />
+          { (selectedEnabled === "motivated" || selectedEnabled === "calm" || selectedEnabled === "exhausted") && <Button onClick={() => setDialogStep(2)}>Show taste</Button>}
+        </div>}
+        { dialogStep === 2 && 
+          (selectedEnabled === "motivated" ? <MediaCard img={rock} title={"rock"} /> : selectedEnabled === "calm" ? <MediaCard img={breathe} title={"breathe"} /> : <MediaCard img={sleep} title={"sleep"} />)
+        }
       </div>
-      
+
     </div>
   );
 }
