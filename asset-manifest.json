@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/vieco/static/css/main.c5a3ee5c.chunk.css",
-    "main.js": "/vieco/static/js/main.f19cf29e.chunk.js",
-    "main.js.map": "/vieco/static/js/main.f19cf29e.chunk.js.map",
+    "main.css": "/vieco/static/css/main.1940ec31.chunk.css",
+    "main.js": "/vieco/static/js/main.14e82e27.chunk.js",
+    "main.js.map": "/vieco/static/js/main.14e82e27.chunk.js.map",
     "runtime-main.js": "/vieco/static/js/runtime-main.e5d94231.js",
     "runtime-main.js.map": "/vieco/static/js/runtime-main.e5d94231.js.map",
-    "static/js/2.7c9e36da.chunk.js": "/vieco/static/js/2.7c9e36da.chunk.js",
-    "static/js/2.7c9e36da.chunk.js.map": "/vieco/static/js/2.7c9e36da.chunk.js.map",
+    "static/js/2.d86a53fe.chunk.js": "/vieco/static/js/2.d86a53fe.chunk.js",
+    "static/js/2.d86a53fe.chunk.js.map": "/vieco/static/js/2.d86a53fe.chunk.js.map",
     "index.html": "/vieco/index.html",
-    "precache-manifest.fc968cc1316819dd55783b0daff95b56.js": "/vieco/precache-manifest.fc968cc1316819dd55783b0daff95b56.js",
+    "precache-manifest.8aab6ec0f2ef1df10888211c06c05fb0.js": "/vieco/precache-manifest.8aab6ec0f2ef1df10888211c06c05fb0.js",
     "service-worker.js": "/vieco/service-worker.js",
-    "static/css/main.c5a3ee5c.chunk.css.map": "/vieco/static/css/main.c5a3ee5c.chunk.css.map",
-    "static/js/2.7c9e36da.chunk.js.LICENSE.txt": "/vieco/static/js/2.7c9e36da.chunk.js.LICENSE.txt",
+    "static/css/main.1940ec31.chunk.css.map": "/vieco/static/css/main.1940ec31.chunk.css.map",
+    "static/js/2.d86a53fe.chunk.js.LICENSE.txt": "/vieco/static/js/2.d86a53fe.chunk.js.LICENSE.txt",
     "static/media/2020_PYUA_SLEEP.jpg": "/vieco/static/media/2020_PYUA_SLEEP.d43edc09.jpg",
     "static/media/PYUA-DANCE.jpg": "/vieco/static/media/PYUA-DANCE.516c55b7.jpg",
     "static/media/Pyua - Rock.jpg": "/vieco/static/media/Pyua - Rock.10b24414.jpg",
@@ -24,9 +24,11 @@
     "static/media/clem-onojegaw.jpg": "/vieco/static/media/clem-onojegaw.c058841b.jpg",
     "static/media/clem-onojeghuo.jpg": "/vieco/static/media/clem-onojeghuo.216ef03c.jpg",
     "static/media/cynthia-del-rio.jpg": "/vieco/static/media/cynthia-del-rio.9813593c.jpg",
+    "static/media/demo.mp4": "/vieco/static/media/demo.b89f2503.mp4",
     "static/media/kendall.jpg": "/vieco/static/media/kendall.e0508cc9.jpg",
     "static/media/landing-bg.jpg": "/vieco/static/media/landing-bg.df8fd3ef.jpg",
     "static/media/landing.jpg": "/vieco/static/media/landing.08e18cb9.jpg",
+    "static/media/logo.jpg": "/vieco/static/media/logo.ca0052f5.jpg",
     "static/media/mariya-georgieva.jpg": "/vieco/static/media/mariya-georgieva.4575c40b.jpg",
     "static/media/olu-eletu.jpg": "/vieco/static/media/olu-eletu.4112cbc1.jpg",
     "static/media/pexels-pixabay-289825.jpg": "/vieco/static/media/pexels-pixabay-289825.3b13df04.jpg",
@@ -43,8 +45,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.e5d94231.js",
-    "static/js/2.7c9e36da.chunk.js",
-    "static/css/main.c5a3ee5c.chunk.css",
-    "static/js/main.f19cf29e.chunk.js"
+    "static/js/2.d86a53fe.chunk.js",
+    "static/css/main.1940ec31.chunk.css",
+    "static/js/main.14e82e27.chunk.js"
   ]
 }
