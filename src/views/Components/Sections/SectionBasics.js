@@ -32,6 +32,7 @@ import dance from "assets/img/PYUA-DANCE.jpg"
 import styles from "assets/jss/material-kit-react/views/componentsSections/basicsStyle.js";
 import MediaCard from "../MediaCard";
 import { AirlineSeatFlatRounded } from "@material-ui/icons";
+import SectionCarousel from "./SectionCarousel";
 
 const useStyles = makeStyles(styles);
 
@@ -364,8 +365,11 @@ export default function SectionBasics() {
         { dialogStep === 2 && 
           (selectedEnabled === "motivated" ? <MediaCard img={rock} title={"rock"} /> : selectedEnabled === "calm" ? <MediaCard img={breathe} title={"breathe"} /> : <MediaCard img={sleep} title={"sleep"} />)
         }
+        <div className={classes.title}>
+          <h2>_your story</h2>
+        </div>
+        <SectionCarousel/>
       </div>
-
     </div>
   );
 }

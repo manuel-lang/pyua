@@ -10,9 +10,9 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Card from "components/Card/Card.js";
 
-import image1 from "assets/img/bg.jpg";
-import image2 from "assets/img/bg2.jpg";
-import image3 from "assets/img/bg3.jpg";
+import image3 from "assets/img/pexels-pixabay-289825.jpg";
+import image1 from "assets/img/pexels-trinity-kubassek-246807.jpg";
+import image2 from "assets/img/pexels-suleman-mukhtar-452557.jpg";
 
 import styles from "assets/jss/material-kit-react/views/componentsSections/carouselStyle.js";
 
@@ -38,10 +38,13 @@ export default function SectionCarousel() {
                 <div>
                   <img src={image1} alt="First slide" className="slick-image" />
                   <div className="slick-caption">
+                    <h3>
+                      Trinity
+                    </h3>
                     <h4>
-                      <LocationOn className="slick-icons" />
-                      Yellowstone National Park, United States
-                    </h4>
+                    #IAmReadyToRock with pyua and my favorite flavours.<br/>
+                    <LocationOn className="slick-icons" /> Arizona, United States
+                      </h4>
                   </div>
                 </div>
                 <div>
@@ -51,19 +54,24 @@ export default function SectionCarousel() {
                     className="slick-image"
                   />
                   <div className="slick-caption">
+                    <h3>
+                      Suleman
+                    </h3>
                     <h4>
-                      <LocationOn className="slick-icons" />
-                      Somewhere Beyond, United States
-                    </h4>
+                    #IAmReadyToDance all night. <LocationOn className="slick-icons" />
+                      Hamburg, Germany
+                      </h4>
                   </div>
                 </div>
                 <div>
-                  <img src={image3} alt="Third slide" className="slick-image" />
+                  <img src={image3} alt="Third slide" className="slick-image" max />
                   <div className="slick-caption">
-                    <h4>
-                      <LocationOn className="slick-icons" />
-                      Yellowstone National Park, United States
-                    </h4>
+                    <h3>
+                      Sarah
+                    </h3>
+                    <h4>#IAmReadyToBreathe and enjoy the beauty of nature. <br/><LocationOn className="slick-icons" />
+                      Melbourne, Australia
+                      </h4>
                   </div>
                 </div>
               </Carousel>
