@@ -38,7 +38,7 @@ export default function Components(props) {
   const [orientation, setOrientation] = useState(1);
   const [wordIndex, setWordIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
-  const words = ["unisex", "sustainable", "your choice"];
+  const words = ["caring", "reassuring", "supportive", "conscious", "mindful", "clean", "the counterpart to our confusing world – embracing consciousness & mindfulness"];
 
   useEffect(() => {
     const func = setTimeout(() => {

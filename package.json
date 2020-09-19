@@ -10,18 +10,21 @@
     "@material-ui/icons": "4.9.1",
     "classnames": "2.2.6",
     "gh-pages": "^3.1.0",
+    "gulp": "^4.0.2",
     "history": "4.10.1",
     "moment": "2.26.0",
     "node-sass": "4.14.1",
     "nouislider": "14.5.0",
     "prop-types": "15.7.2",
-    "react": "16.13.1",
+    "react": "^16.13.1",
     "react-datetime": "2.16.3",
-    "react-dom": "16.13.1",
+    "react-dom": "^16.13.1",
     "react-router-dom": "5.2.0",
-    "react-scripts": "3.4.1",
+    "react-scripts": "^3.4.3",
     "react-slick": "0.26.1",
-    "react-swipeable-views": "0.13.9"
+    "react-swipeable-views": "0.13.9",
+    "redux": "^4.0.5",
+    "video-react": "^0.14.1"
   },
   "scripts": {
     "predeploy": "npm run build",
@@ -46,5 +49,8 @@
       "not op_mini all"
     ],
     "development": []
+  },
+  "devDependencies": {
+    "gulp-append-prepend": "^1.0.8"
   }
 }

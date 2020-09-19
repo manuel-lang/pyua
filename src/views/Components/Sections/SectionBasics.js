@@ -8,6 +8,8 @@ import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Checkbox from "@material-ui/core/Checkbox";
 import Radio from "@material-ui/core/Radio";
 import Switch from "@material-ui/core/Switch";
+import { Player } from 'video-react';
+
 // @material-ui/icons
 import Favorite from "@material-ui/icons/Favorite";
 import People from "@material-ui/icons/People";
@@ -27,6 +29,9 @@ import sleep from "assets/img/2020_PYUA_SLEEP.jpg";
 import rock from "assets/img/Pyua - Rock.jpg";
 import breathe from "assets/img/Pyua_Breathe.jpg";
 import dance from "assets/img/PYUA-DANCE.jpg"
+
+import logo from "assets/img/logo.jpg"
+import video from "assets/demo.mp4"
 
 
 import styles from "assets/jss/material-kit-react/views/componentsSections/basicsStyle.js";
@@ -89,6 +94,11 @@ export default function SectionBasics() {
   return (
     <div className={classes.sections}>
       <div className={classes.container}>
+      <Player
+      playsInline
+      poster={logo}
+      src={video}
+    />
         <div className={classes.title}>
           <h2>_your mood</h2>
         </div>
